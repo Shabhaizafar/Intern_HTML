@@ -1,0 +1,40 @@
+inspect : cntrl + shift + i 
+
+
+
+
+
+Documentation : 
+shift+ 1 then enter 
+type 'doc' then enter 
+type 'html:5' then enter
+
+
+
+
+Comment : 
+ctrl +/ 
+
+
+
+li*5 then enter  
+
+
+li{content}*5 thn enter 
+
+
+
+
+li{content$}*5 then enter
+
+
+
+auto save :
+
+
+
+
+
+
+live server   (ritwick)
+live preview  (microsoft)

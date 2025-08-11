@@ -1,0 +1,94 @@
+=> Web Development :-
+    1. create a Website.    (static)
+    2. create a WebApp.     (dynamic)
+
+    Basic : 
+        1. HTML   : Hyper text Markup Language 
+                    - Create a Structure of Website/Webpages.
+
+        2. CSS    :  cascading Style Sheet
+                    - To Design/Style on Structure
+ 
+        3. JS     : Javascript
+                    - To add a Functionality
+
+
+
+Web developer : 
+Front-end Developer :    HTML,CSS,JS,react,Bootstrap,Tailwind,Next.js etc...
+
+Back-end Developer :     CPP,Java,Python, NodeJS , PHP ,.net etc....
+
+Fullstack Developer :    Front+Back  + DB   
+                            MongoDB / SQL /SQLite
+
+
+MERN Developer: 
+                M  : MongoDB     
+                E  : Express JS 
+                R  : React JS     (Library)
+                N  : Node JS
+
+MEAN Developer : 
+                M  : MongoDB
+                E  : Express JS 
+                A  : Angular JS   (Frame Work)
+                N  : Node JS
+
+Software Engineer : 
+
+
+===========================================
+=> What is HTML? 
+-> HTML Stands Hyper text Markup Language.
+
+
+Use : 
+    Create a Structure of Website/Webpages.
+        Webpage : Single HTML File.
+        Website : Collection of Webpages/HTML Files.
+
+================================================
+Hyper text  : 
+            Hyper : Hype  (Link)   (depand on Text)
+            Text  : Content (texture,images,videos,etc...)
+Markup Language : Text-encoding System     (space : &nbsp;)
+
+================================================
+Founder/Developer  : Tim Berner's Lee.
+
+Version History : 
+            HTML 1.0   -> 1991
+                 1.2
+
+
+            HTML 2.0  -> 1995
+
+
+            HTML 3.0  -> jan,1997
+
+            HTML 4.0  -> Dec,1997
+                      -> 2000
+
+
+            HTML 5.0  -> 2014 
+                 5.2  -> 2017
+
+======================================================
+Extension :  
+    1. .html (new) 
+    2. .htm  (old) 
+======================================================
+
+HTML : Not Given an Error 
+    https://validator.w3.org/
+    
+
+======================================================
+<!DOCTYPE html>   : not a Tag 
+
+
+HTML : Case insensetive 
+
+
+https://info.cern.ch/
