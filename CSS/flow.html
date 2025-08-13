@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Topic Flow</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121821;
+      --muted: #8fa3b8;
+      --text: #e6edf3;
+      --accent: #6aa6ff;
+      --accent-2: #7cf2d4;
+      --ring: #22324a;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% -10%, #142033 0%, transparent 60%),
+                  radial-gradient(1000px 700px at 120% 20%, #082030 0%, transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px 40px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+      background: linear-gradient(180deg, rgba(11,15,20,.85), rgba(11,15,20,.65) 70%, transparent);
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--ring);
+      z-index: 5;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      letter-spacing: .3px;
+    }
+    header p { margin: 6px 0 0; color: var(--muted); font-size: .95rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    details.topic {
+      background: linear-gradient(180deg, rgba(18,24,33,.9), rgba(18,24,33,.85));
+      border: 1px solid var(--ring);
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.25);
+      transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    details.topic[open] {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(0,0,0,.35);
+      border-color: color-mix(in oklab, var(--ring) 60%, var(--accent) 40%);
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    summary::-webkit-details-marker { display: none; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 10px;
+      font-size: .75rem;
+      border-radius: 999px;
+      background: rgba(106,166,255,.15);
+      color: var(--accent);
+      border: 1px solid color-mix(in oklab, var(--accent) 30%, var(--ring) 70%);
+    }
+
+    ul.items { margin: 12px 0 0 0; padding: 0 0 0 18px; }
+    ul.items li { margin: 8px 0; }
+
+    .footer-note {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: .9rem;
+      text-align: center;
+    }
+
+    .chip {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(124, 242, 212, .08);
+      border: 1px dashed color-mix(in oklab, var(--accent-2) 30%, var(--ring) 70%);
+      color: var(--accent-2);
+      padding: 8px 12px; border-radius: 12px; font-size: .85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Topic Flow</h1>
+    <p>From fundamentals → layout → responsiveness → visuals → interactions. Click a card to expand its topics.</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <!-- 1. Introduction -->
+      <details class="topic" open>
+        <summary>1 · Introduction <span class="badge">2 topics</span></summary>
+        <ul class="items">
+          <li>First CSS</li>
+          <li>Type of CSS</li>
+        </ul>
+      </details>
+
+      <!-- 2. CSS Basics -->
+      <details class="topic" open>
+        <summary>2 · CSS Basics <span class="badge">12 topics</span></summary>
+        <ul class="items">
+          <li>style</li>
+          <li>BorderProperties</li>
+          <li>Border-radius, Border Property</li>
+          <li>BoxModel</li>
+          <li>MarginProperty</li>
+          <li>PaddingProperty</li>
+          <li>Height</li>
+          <li>width</li>
+          <li>font</li>
+          <li>Font property start</li>
+          <li>Background-properties</li>
+          <li>textBackground</li>
+          <li>filter, background-attachment, over-flow, box-shadow</li>
+        </ul>
+      </details>
+
+      <!-- 3. Display & Positioning -->
+      <details class="topic">
+        <summary>3 · Display & Positioning <span class="badge">7 topics</span></summary>
+        <ul class="items">
+          <li>display</li>
+          <li>z-index</li>
+          <li>Display, z-index</li>
+          <li>position property</li>
+          <li>position2 Practice</li>
+          <li>float</li>
+          <li>Transform Property</li>
+        </ul>
+      </details>
+
+      <!-- 4. Navigation -->
+      <details class="topic">
+        <summary>4 · Navigation <span class="badge">4 topics</span></summary>
+        <ul class="items">
+          <li>Navigationbar</li>
+          <li>Navabar2</li>
+          <li>nav backup Completed</li>
+          <li>Navbar Completed</li>
+        </ul>
+      </details>
+
+      <!-- 5. Transforms & Transitions -->
+      <details class="topic">
+        <summary>5 · Transforms & Transitions <span class="badge">3 topics</span></summary>
+        <ul class="items">
+          <li>2DTransform Completed</li>
+          <li>Transition (Remaining)</li>
+          <li>Transform Property (recap)</li>
+        </ul>
+      </details>
+
+      <!-- 6. Flexbox & Grid -->
+      <details class="topic">
+        <summary>6 · Flexbox & Grid <span class="badge">6 topics</span></summary>
+        <ul class="items">
+          <li>flex 1</li>
+          <li>flex-2</li>
+          <li>Flex Layout</li>
+          <li>Flex-Layout</li>
+          <li>grid</li>
+          <li>Grid Tamplate1</li>
+        </ul>
+      </details>
+
+      <!-- 7. Responsive Design -->
+      <details class="topic">
+        <summary>7 · Responsive Design <span class="badge">1 topic</span></summary>
+        <ul class="items">
+          <li>Media Query</li>
+        </ul>
+      </details>
+
+      <!-- 8. Colors & Gradients -->
+      <details class="topic">
+        <summary>8 · Colors & Gradients <span class="badge">2 topics</span></summary>
+        <ul class="items">
+          <li>Gradial</li>
+          <li>conic</li>
+        </ul>
+      </details>
+
+      <!-- 9. Forms -->
+      <details class="topic">
+        <summary>9 · Forms <span class="badge">1 topic</span></summary>
+        <ul class="items">
+          <li>form 1</li>
+        </ul>
+      </details>
+
+      <!-- 10. Animations & Effects -->
+      <details class="topic">
+        <summary>10 · Animations & Effects <span class="badge">5 topics</span></summary>
+        <ul class="items">
+          <li>Animation-1</li>
+          <li>Animation2</li>
+          <li>Animation3</li>
+          <li>Hover Effect</li>
+          <li>3D nav</li>
+        </ul>
+      </details>
+    </div>
+
+    <p class="footer-note">
+      <span class="chip">Tip</span> You can copy this file as <strong>index.html</strong> and open it directly in your browser. Tweak topics freely.
+    </p>
+  </div>
+</body>
+</html>

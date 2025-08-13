@@ -1,0 +1,53 @@
+CSS : Cascading Style Sheet 
+
+Cascading : Your Choice !!
+Style     : design
+Sheet     : document/file
+
+
+
+Use : 
+- To add a Style in a HTML Structure  
+- To Make a Website loader Fast
+
+
+Advantage/Disadvantage : 
+
+Version of CSS : 
+CSS , CSS2 , CSS3
+
+
+
+CSS File : .css  
+
+
+
+How to Implment CSS in a HTML : 
+
+1. Inline CSS 
+2. Internal CSS 
+3. External CSS 
+
+
+
+Note : 
+    - we can use HTML without CSS.
+    - we can't use a CSS without HTML. 
+
+
+inline > internal/external (same) 
+
+
+
+
+Selector : 
+
+id > class > element > universal
+
+
+
+id : single design 
+class : different different element and same design
+element : same multiple element and same design
+
+universal : reset
