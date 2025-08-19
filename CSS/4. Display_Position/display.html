@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            /* display: block; */
+            /* width: 200px; */
+            /* height: 200px; */
+            /* margin: 50px; */
+            /* padding: 30px; */
+            /* margin: auto; */
+        }
+
+        /* 
+        block :
+            - default width : 100%
+            - default hiehgt : content-size
+            - width : changable 
+            - height : changable 
+            - margin : all side workable 
+            - margin : auto  (working)
+            - padding :  all side workable 
+            - text-position : not fixed
+        */
+        b{
+            /* display: inline; */
+            background-color: red;
+            /* width: 200px; */
+            /* height: 200px; */
+            /* margin: 50px; */
+            /* margin: auto; */
+            /* padding: 20px; */
+        }
+        /* 
+        inline : 
+            - default width : content-size
+            - default hiehgt : content-size
+            - width :  not changable 
+            - height : not changable 
+            - margin : left+right workable  (top+bottom not working)
+            - margin : auto  (not working)
+            - padding :  all side workable 
+            - text-position : fixed
+        */
+        b{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            /* margin: 50px; */
+            /* margin: auto; */
+            padding: 20px;
+        }
+        /*
+        inline-block : 
+            - default width : content-size
+            - default hiehgt : content-size
+            - width : changable 
+            - height : changable 
+            - margin : all side workable 
+            - margin : auto  (not working)
+            - padding :  all side workable
+            - text-position : not fixed
+        */
+    </style>
+</head>
+<body>
+    
+    <div>DIV</div>
+    <b>Bold tag</b>
+</body>
+</html>
+<!-- 
+block 
+inline 
+inline-block
+-->
