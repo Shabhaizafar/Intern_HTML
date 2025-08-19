@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+        }
+        .box1{
+            background-color: rgba(173, 216, 230, 0.7);
+            left: 150px;
+            z-index: 0;
+        }
+        .box2{
+            background-color: rgba(240, 128, 128, 0.7);
+            left: 200px;
+        }
+        .box3{
+            background-color: rgba(255, 160, 122, 0.7);
+            left: 250px;
+            /* z-index: 1; */
+            /* z-index: -1; */
+        }
+        .box4{
+            background-color: rgba(32, 178, 171, 0.7);
+            left: 300px;
+        }
+        .box5{
+            background-color: rgba(50, 205, 50, 0.7);
+            left: 350px;
+            z-index: 0;
+        }
+        div:hover{
+            background-color: red;
+            z-index:1;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+    <div class="box3">Box3</div>
+    <div class="box4">Box4</div>
+    <div class="box5">Box5</div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        div:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+
+    </div>
+</body>
+</html> -->
