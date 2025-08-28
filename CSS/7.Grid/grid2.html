@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        section{
+            width: 80%;
+            height: 600px;
+            background-color: white;
+            padding: 15px;
+
+            display: grid;
+            grid-template-columns: 3.4fr 1fr 1fr 2fr;
+            grid-template-rows: 1fr 1.3fr 2.5fr 1fr;
+            gap: 15px;
+            grid-template-areas: 
+            "a a b b"
+            "c g b b"
+            "c g d e"
+            "f f f f";
+        }
+        .box1{
+            background-color: lightcoral;
+            grid-area: a;
+        }
+        .box2{
+            background-color: lightslategrey;
+            grid-area: b;
+        }
+        .box3{
+            background-color: lightsalmon;
+           grid-area: c; 
+        }
+        .box4{
+            background-color: lightseagreen;
+            grid-area: d;
+        }
+        .box5{
+            background-color: lightsteelblue;
+            grid-area: e;
+        }
+        .box6{
+            background-color: lightslategrey;
+            grid-area: f;
+        }
+        .box7{
+            grid-area: g;
+            display: grid;
+            gap: 15px;
+            padding: 0px 30px;
+        }
+        main{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7">
+            <main style="background-color: blue;"></main>
+            <main style="background-color: blue;"></main>
+            <main style="background-color: blue;"></main>
+            <main style="background-color: blue;"></main>
+        </div>
+    </section>
+</body>
+</html>
