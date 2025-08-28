@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: gray;
+            width: 100%;
+            height: 500px;
+
+            display: grid;
+            /* grid-template-columns: auto; */
+            /* grid-template-columns: auto auto; */
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: 150px 200px; */
+            /* grid-template-columns: 150px 200px auto; */
+
+            /* grid-template-columns: 1fr; */
+
+            /* 
+            1fr = 100%/total no. of fr = 100/1 = 100%
+            */
+
+
+            /* grid-template-columns: 1fr 2fr; */
+            /* 
+            1fr = 100%/total no. of fr = 100/3 = 33.33%
+            */
+            grid-template-columns: 1fr 3fr 2fr;
+
+            /* grid-template-rows: 100px 150px 100px; */
+            grid-template-rows: 1fr 2fr 1.5fr 1fr;
+
+
+
+            /* row-gap: 20px; */
+            /* column-gap: 30px; */
+                /* row col */
+            gap: 20px 40px;
+        }
+        .box1{
+            background-color: lightcoral;
+        }
+        .box2{
+            background-color: lightblue;
+        }
+        .box3{
+            background-color: lightgreen;
+        }
+        .box4{
+            background-color: lightpink;
+        }
+        .box5{
+            background-color: lime;
+        }
+        .box6{
+            background-color: lightsalmon;
+        }
+        .box7{
+            background-color: lightseagreen;
+        }
+        .box8{
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+        <div class="box4">Box4</div>
+        <div class="box5">Box5</div>
+        <div class="box6">Box6</div>
+        <div class="box7">Box7</div>
+        <div class="box8">Box8</div>
+    </section>
+</body>
+</html>

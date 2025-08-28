@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: gray;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            /*Flex Properties*/
+
+            /* justify-content: left; */
+            /* justify-content:start; */
+            /* justify-content:flex-start; */
+
+            /* justify-content: right; */
+            /* justify-content: end; */
+            /* justify-content: flex-end; */
+
+            /* justify-content: center; */
+
+
+            justify-content: space-between;
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+
+
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+
+
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            
+
+            /* flex-flow: column; */
+            /* flex-flow: wrap; */
+            /* flex-flow: row-reverse wrap; */
+
+
+            /* align-items: stretch; */
+
+            /* align-items: first baseline; */
+            /* align-items: baseline; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: last baseline; */
+            /* align-items: center; */
+
+        }
+        div{
+            /* display: inline; */
+            /* display: inline-block; */
+
+            flex-grow: 1;
+        }
+        h1{
+            flex-grow: 1;
+        }
+          .box1{
+            background-color: lightcoral;
+        }
+        .box2{
+            background-color: lightblue;
+        }
+        .box3{
+            background-color: lightgreen;
+            /* order: -1; */
+        }
+        .box4{
+            background-color: lightpink;
+            order: 1;
+        }
+        .box5{
+            background-color: lime;
+            /* flex-grow: 2; */
+        }
+        .box6{
+            background-color: lightsalmon;
+        }
+        .box7{
+            background-color: lightseagreen;
+        }
+        .box8{
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <h1 class="box3">Box3</h1>
+        <div class="box4">Box4</div>
+        <div class="box5">Box5</div>
+        <div class="box6">Box6</div>
+        <div class="box7">Box7</div>
+        <div class="box8">Box8</div>
+    </section>
+</body>
+</html>
+
+
+<!-- 
+Responsive Website : 
+
+1. flex         : flexible  layout 
+2. grid         : fixed  Layout
+3. media Query  : Set CSS according your Screen Resolution
+4. meta tag     : SEO
+
+-->
