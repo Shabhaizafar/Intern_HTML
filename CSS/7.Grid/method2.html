@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        /* Parent Element */
+        section{
+            width: 60%;
+            height: 600px;
+            background-color:rgb(56, 61, 66);
+            padding: 20px;
+            font-family: calibri;
+            font-size: 24px;
+            display: grid;
+
+            /* grid-template-columns: auto; */
+            /* grid-template-columns: auto auto; */
+            /* grid-template-columns: 100px; */
+            /* grid-template-columns: 100px 300px; */
+
+            /* grid-template-columns: 1fr 2fr; */
+            /* grid-template-columns: 1fr 2fr 1.5fr; */
+
+            /* 
+                1fr = 100%/total no. fr 
+                    = 100%/1 = 100%
+
+                1fr = 100%/2 = 50%
+
+                1fr = 100%/3 = 33.33%
+            */
+
+            grid-template-columns: .8fr 1fr 1fr;
+            grid-template-rows: .4fr 1fr 1fr .5fr;
+
+            gap: 20px;
+
+        }
+
+        header{
+            background-color: blueviolet;
+            border: 4px solid black;
+            color: white;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            align-content: center;
+        }
+        aside{
+            background-color: blueviolet;
+            border: 4px solid black;
+            color: white;
+            text-align: center;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            align-content: center;
+        }
+        .content-1{
+            background-color: blueviolet;
+            border: 4px solid black;
+            color: white;
+            text-align: center;
+            grid-column-start: 2;
+            align-content: center;
+            grid-column-end: 4;
+        }
+        .content-2{
+            background-color: blueviolet;
+            border: 4px solid black;
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+        .content-3{
+            background-color: blueviolet;
+            border: 4px solid black;
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+        footer{
+            background-color: blueviolet;
+            align-content: center;
+            border: 4px solid black;
+            color: white;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>Header</header>
+        <aside>Sidebar</aside>
+        <div class="content-1">Content - 1</div>
+        <div class="content-2">Content - 2</div>
+        <div class="content-3">Content - 3</div>
+        <footer>Footer</footer>
+    </section>
+</body>
+</html>

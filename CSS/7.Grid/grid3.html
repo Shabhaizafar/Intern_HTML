@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        section{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            width: 50%;
+            margin: 2vh auto;
+            height: 96vh;
+            /* background-color: white; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: .6fr 3fr 1fr 1fr 1fr;
+        }
+        .box1{
+            align-content: center;
+            text-align: center;
+            background-color: rgb(41, 42, 61);
+            color: white;
+        }
+        .box2{
+            align-content: center;
+            text-align: center;
+            background-color: crimson;
+            color: white;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .box3{
+            align-content: center;
+            text-align: center;
+            background-color: rgb(62, 107, 124);
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .box4{
+            align-content: center;
+            text-align: center;
+            background-color:  rgb(59, 60, 94);
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .box5{
+            align-content: center;
+            text-align: center;
+            background-color: lightgreen;
+            grid-column-start: 4;
+        }
+        .box6{
+            align-content: center;
+            text-align: center;
+            background-color: rgb(58, 100, 58);
+            grid-column-start: 4;
+        }
+        .box7{
+            align-content: center;
+            text-align: center;
+            background-color: rgb(206, 206, 157);
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1">HEADER</div>
+        <div class="box2">MENU</div>
+        <div class="box3">HERO</div>
+        <div class="box4">MAIN</div>
+        <div class="box5">IMAGE</div>
+        <div class="box6">EXTRA</div>
+        <div class="box7">BANNER</div>
+    </section>
+</body>
+</html>
