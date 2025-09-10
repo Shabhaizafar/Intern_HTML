@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            background-color: coral;
+            width: 100px;
+            height: 100px;
+
+            animation-name: box;
+            animation-duration: 2s;
+            /* animation-iteration-count: 3; */
+            animation-iteration-count: infinite;
+
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+            animation-direction:alternate;
+            /* animation-direction:alternate-reverse; */
+
+
+            animation-delay: 4s;
+        }
+
+        /* Method : 1 */
+        @keyframes box {
+            from{
+                /*  */
+                width: 100px;
+                height: 100px;
+            }
+            to{
+                /*  */
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+</body>
+</html>

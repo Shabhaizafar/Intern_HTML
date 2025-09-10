@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: calibri;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        main{
+            height: 300px;
+            border: 2px dashed red;
+        }
+        div{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+
+            animation-name: box;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+            
+        }
+
+        /* Method: 2 */
+        @keyframes box {
+            0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate(0px,200px);
+            }
+            50%{
+                transform: translate(200px,200px);
+            }
+            75%{
+                transform: translate(200px,0px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+        }
+        .box1{
+            animation-timing-function: unset;
+        }
+        .box2{
+            animation-timing-function: linear;
+        }
+        .box3{
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .box4{
+            animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        }
+        .box5{
+            animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <main>
+            <div class="box1">
+                normal
+            </div>
+        </main>
+        <main>
+            <div class="box2">
+                Linear
+            </div>
+        </main>
+        <main>
+            <div class="box3">
+                cubic-bezier(0.075, 0.82, 0.165, 1)
+            </div>
+        </main>
+        <main>
+            <div class="box4"></div>
+        </main>
+        <main>
+            <div class="box5"></div>
+        </main>
+        <main>
+            <div class="box6"></div>
+        </main>
+        <main>
+            <div class="box7"></div>
+        </main>
+        <main>
+            <div class="box8"></div>
+        </main>
+        <main>
+            <div class="box9"></div>
+        </main>
+        <main>
+            <div class="box10"></div>
+        </main>
+    </section>
+
+</body>
+</html>
