@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            color: white;
+            display: inline-block;
+            margin: 1px;
+        }
+        /* 
+        gradient  : 
+        6 
+            linear 
+                repeating
+            radial 
+                repeating
+            conic 
+                repeating
+         */
+        .box1{
+            background-image: linear-gradient(red,yellow);
+        }
+        .box2{
+            background-image: radial-gradient(red,yellow);
+        }
+        .box3{
+            background-image: conic-gradient(red,yellow);
+        }
+        .box4{
+            background-image: linear-gradient(red 0%,red 50%,yellow 50%,yellow 100%);
+        }
+        .box5{
+            background-image: radial-gradient(red 0%,red 50%,yellow 50%,yellow 100%);
+        }
+        .box6{
+            background-image: conic-gradient(red 0deg,red 120deg,yellow 120deg,yellow 360deg);
+        }
+        .box7{
+            background-image: linear-gradient(to left,red 0%,red 50%,yellow 50%,yellow 100%);
+        }
+        .box8{
+            background-image: radial-gradient(at 0% 50%,red 0%,red 50%,yellow 50%,yellow 100%);
+        }
+        .box9{
+            background-image: conic-gradient(from 30deg,red 0deg,red 120deg,yellow 120deg,yellow 360deg);
+        }
+        .box10{
+            background-image: linear-gradient(to left bottom,red 0%,red 50%,yellow 50%,yellow 100%);
+        }
+        .box11{
+            background-image: radial-gradient(circle at 0% 50%,red 0%,red 50%,yellow 50%,yellow 100%);
+        }
+        .box14{
+            background-image: radial-gradient(at 100% 100%,red 0%,red 50%,yellow 50%,yellow 100%);
+        }
+        .box13{
+            background-image: repeating-linear-gradient(blue 0px,blue 20px,crimson 20px,crimson 40px);
+        }
+        .box17{
+            background-image: repeating-radial-gradient(red 0px,red 20px,yellow 20px,yellow 40px);
+        }
+        .box12{
+            background-image: repeating-conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg);
+        }
+        .box15{
+            background-image: repeating-conic-gradient(red 0deg,red 90deg,#ffff00 90deg,yellow 180deg);
+            background-repeat: repeat;
+            background-size: 50px 50px;
+        }
+        .box20{
+            background-image: repeating-radial-gradient(red 0px,red 20px,transparent 20px,transparent 40px),repeating-linear-gradient(blue 0px,blue 20px,crimson 20px,crimson 40px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+    <div class="box6">box6</div>
+    <div class="box7">box7</div>
+    <div class="box8">box8</div>
+    <div class="box9">box9</div>
+    <div class="box10">box10</div>
+    <div class="box11">box11</div>
+    <div class="box12">box12</div>
+    <div class="box13">box13</div>
+    <div class="box14">box14</div>
+    <div class="box15">box15</div>
+    <div class="box16">box16</div>
+    <div class="box17">box17</div>
+    <div class="box18">box18</div>
+    <div class="box19">box19</div>
+    <div class="box20">box20</div>
+</body>
+</html>

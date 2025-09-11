@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-size: 42px;
+        }
+        div{
+            /* border: 1px solid blue; */
+            width: fit-content;
+
+            background-image: radial-gradient(white,transparent);
+            background-size: 100px 100%;
+            background-repeat: no-repeat;
+            background-position: 0% 0%;
+            animation-name: box;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            color: transparent;
+
+            -webkit-background-clip: text;
+        }
+        @keyframes box {
+            from{
+                background-position: -30% 0%;
+            }
+            to{
+                background-position: 130% 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is a Animation Text.
+    </div>
+</body>
+</html>
+
+
+<!-- 
+https://i.sstatic.net/C1f9g.gif
+-->
